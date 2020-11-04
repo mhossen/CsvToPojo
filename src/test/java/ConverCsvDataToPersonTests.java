@@ -16,7 +16,7 @@ public class ConverCsvDataToPersonTests {
 						.WithDelimiter(",")
 						.WithFileExtension("csv")
 						.WithFileName("PersonData")
-						.GetCsvDataList(Person.class);
+						.GetCsvDataToList(Person.class);
 	}
 
 	@DataProvider
@@ -49,7 +49,7 @@ public class ConverCsvDataToPersonTests {
 	}
 
 	@Test(dataProvider = "TestData")
-	public void MatchPersonIdAndSalary_IsValid(int id, double salary) throws Exception {
+	public void MatchPersonIdWithSalary_IsValid(int id, double salary) throws Exception {
 		Assert.assertEquals(
 						data.stream().filter(p -> p.Id == id).findFirst().get().Salary, salary);
 	}

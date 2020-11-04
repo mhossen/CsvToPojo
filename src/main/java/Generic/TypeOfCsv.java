@@ -39,7 +39,7 @@ public class TypeOfCsv<T> {
 		return this;
 	}
 
-	public List<T> GetCsvDataList(Class<T> pClass) throws Exception {
+	public List<T> GetCsvDataToList(Class<T> pClass) throws Exception {
 		List<String> rawData = ReadFileContentAsLines();
 		String[] headers = rawData.stream().findFirst().get().split(String.valueOf(_delimiter));
 		int columnCount = headers.length;
