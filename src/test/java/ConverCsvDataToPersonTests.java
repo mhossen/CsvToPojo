@@ -14,7 +14,6 @@ public class ConverCsvDataToPersonTests {
 	public void TestSetup() throws Exception {
 		data = new TypeOfCsv<Person>()
 						.WithDelimiter(",")
-						.WithFileExtension("csv")
 						.WithFileName("PersonData")
 						.GetCsvDataToList(Person.class);
 	}

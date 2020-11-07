@@ -4,7 +4,6 @@ import Model.Person;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import java.awt.*;
 import java.util.List;
 
 public class ConvertingCsvToJsonTests {
@@ -14,7 +13,6 @@ public class ConvertingCsvToJsonTests {
 	public void TestSetup() throws Exception {
 		data = new TypeOfCsv<Person>()
 						.WithDelimiter(",")
-						.WithFileExtension("csv")
 						.WithFileName("PersonData")
 						.GetCsvDataToList(Person.class);
 	}
