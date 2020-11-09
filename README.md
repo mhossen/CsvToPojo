@@ -6,7 +6,9 @@ This demo project is designed to show how you can use Java Refection to set valu
 There are two JAVA test class with in the test folder for working example.
 <br/>
 ```JAVA
-// I am passing in Parson object, then setting the separator as comma, then passing in the csv file name and finally setting Person.class to create a run time instance of person class in the generic T
+// I am passing in Parson object, then setting the separator as comma
+// Then passing in the csv file name, and 
+// Finally setting Person.class to create a run time instance of person class in the generic T
 List<Person> people = new TypeOfCsv<Person>()
                .WithDelimiter(",")
                .WithFileName("PersonData")
