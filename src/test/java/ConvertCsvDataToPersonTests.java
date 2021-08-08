@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import java.util.List;
 
-public class ConverCsvDataToPersonTests {
+public class ConvertCsvDataToPersonTests {
 	private List<Person> data;
 
 	@BeforeTest
